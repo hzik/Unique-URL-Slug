@@ -32,7 +32,7 @@ You need to specify the `repeater` url, `generates_from` and `codename` paramete
     "restricted_chars": "[^a-zA-Z0-9]" // default [^a-zA-Z0-9]
 }
 ```
-  - `repeater` -> A URL of a service you host on your server and that forwards JSON from Preview API based on "/items?elements.<codename>[contains]=<value>&depth=0" query
+  - `repeater` -> A URL of a service you host on your server and that forwards JSON from Preview API based on "/items?elements.<url_slug_codename>[contains]=<url_slug_value>&depth=0" query
   - `generates_from` -> A codename of a source Text element you want your url slug to be generated from
   - `codename` -> A codename of your Custom URL Slug element
   - `force_uniqueness` -> A true/false value that generates extra postfix to the url slug value in case the url slug is not unique
